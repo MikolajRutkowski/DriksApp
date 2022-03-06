@@ -13,7 +13,8 @@
 
   <ItemGroup>
     <Resource Include="hhh.jpg" />
-    <Resource Include="Kamikadze.PNG" />
+    <Resource Include="Resorces\hhh.jpg" />
+    <Resource Include="Resorces\Kamikadze.PNG" />
   </ItemGroup>
 
 </Project>
