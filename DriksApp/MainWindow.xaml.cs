@@ -21,44 +21,131 @@ namespace DriksApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        static int o = 1;
-        public MainWindow()
+        static int Counter = 0;
+        static string[] tab;
+        public int FindMaxCounter()
         {
-            InitializeComponent();
+            string path = @"C:\Users\mikol\source\repos\DriksApp\DriksApp\Resorces\Nazwa.txt";
+            string readText = File.ReadAllText(path);
+            int maxcounter = 0;
+            foreach (char c in readText)
+            {
+                if (c == '\n')
+                {
+                    maxcounter++;
+                }
+            }
+            return maxcounter;
         }
 
-       
-           
+        string cut(int x , string entrance, char c = '\n')
+        {
 
-          
-        
+            string readText = entrance;
+            int coun = 0;
+            int start = 0, end = 0;
+            for (int i = 0; i < readText.Length; i++)
+            {
+                if (readText[i] == c)
+                {
+                    
+                    coun++;
+                    if (coun == x)
+                    {
+                        start = i;
+                    }
+                    if (coun == x + 1)
+                    {
+                        end = i;
+                        break;
+                    }
+                }
+            }
+            
+            
+            string cos = readText.Remove(0, start);
+            if (end != 0)
+            {
+                string finale = cos.Remove(end - start);
+                Console.WriteLine(finale);
+                return finale;
+            }
+            return cos;
+        }
+
+        public MainWindow()
+        {
+            string path = @"C:\Users\mikol\source\repos\DriksApp\DriksApp\Resorces\Nazwa.txt";
+            string readText = File.ReadAllText(path);
+            Console.WriteLine(readText);
+            
+            tab = new string[FindMaxCounter()+1];
+            InitializeComponent();
+            for (int i = 0; i < tab.Length; i++)
+            {
+
+                tab[i] = cut(i,readText);
+            }
+            
+        }
+
+        public string SetText(int t = 0)
+        {
+          string  text = tab[Counter];
+            string finale = cut(t, text,'|') ;
+            return finale.Remove(0,1);
+        }
+
+        public  BitmapImage SetImage(string patch)
+        {
+            Uri newImage;
+            //"/Resorces/hhh.jpg"
+            newImage = new Uri(patch, UriKind.Relative);
+            
+            return new BitmapImage(newImage); 
+        }
+
+        public void SetAll()
+        {
+            DrinkNumber.Text = "Drink nr. " + SetText(0);
+            DriksName.Text = SetText(1);
+            DrinkImage.Source = SetImage(SetText(2));          
+            Ingredients.Text = SetText(3);
+            Instruction.Text = SetText(4);
+
+        }
 
         private  void  AddNew_Click(object sender, RoutedEventArgs e)
         {
-            Uri newImage;
-            if (o%2 == 0)
-            {
-             newImage = new Uri("/Resorces/hhh.jpg", UriKind.Relative);
-            }
-            else {  newImage = new Uri("/Resorces/Kamikadze.PNG", UriKind.Relative); }
-            o++;
-            DrinkImage.Source = new BitmapImage(newImage);
+            
+            
            
         }
 
         private void Right_Click(object sender, RoutedEventArgs e)
         {
-
+            Counter++;
+            if(Counter == tab.Length)
+            {
+                Counter = 1;
+            }
+            SetAll();
         }
 
         private void Left_Click(object sender, RoutedEventArgs e)
         {
-
+            Counter--;
+            
+            if (Counter == 0)
+            {
+                Counter = tab.Length - 1;
+            }
+            SetAll();
         }
 
         private  void Exit_Button_Click(object sender, RoutedEventArgs e)
         {
-            
+          Application.Current.Shutdown();
         }
     }
 }

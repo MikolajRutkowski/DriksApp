@@ -1,0 +1,5 @@
+
+1|Kamikadze|/Resorces/Kamikadze.PNG|Wodka 50ml BluCuracao 50ml Sok z Cytryny 50ml|Sk³adniki mieszamy w shakerze, rozlewamy do kieliszków i pijemy na raz.
+2|WHITE LADY|/Resorces/whitelady.PNG|40 ml ginu 30 ml likieru triple sec (np. Cointreau) 20 ml soku z cytryny kostki lodu skórka cytryny do dekoracji|Wszystkie sk³adniki wstrz¹samy w shakerze z kostkami lodu. Przecedzamy do kieliszka koktajlowego, dekorujemy skórk¹ cytryny.
+3|BLUE LAGOON|/Resorces/BlueLagune.PNG|40 ml ginu 20 ml likieru blue curacao Sprite lub 7up do dope³nienia kostki lodu plasterek pomarañczy do dekoracji|Do wysokiej szklanki wrzucamy kostki lodu, wlewamy kolejno wódkê i likier, dope³niamy Spritem.
+4|
