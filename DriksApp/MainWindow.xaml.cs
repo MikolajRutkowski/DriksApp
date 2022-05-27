@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
 namespace DriksApp
 {
     /// <summary>
@@ -21,7 +23,10 @@ namespace DriksApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+
         static int Counter = 0;
+
         static string[] tab;
         public int FindMaxCounter()
         {
@@ -77,7 +82,7 @@ namespace DriksApp
         {
             string path = @"C:\Users\mikol\source\repos\DriksApp\DriksApp\Resorces\Nazwa.txt";
             string readText = File.ReadAllText(path);
-            Console.WriteLine(readText);
+            
             
             tab = new string[FindMaxCounter()+1];
             InitializeComponent();
@@ -117,9 +122,11 @@ namespace DriksApp
 
         private  void  AddNew_Click(object sender, RoutedEventArgs e)
         {
-            
-            
-           
+            NewDrinkWindow win2 = new NewDrinkWindow(FindMaxCounter() );
+            win2.Show();
+            Close();   
+
+
         }
 
         private void Right_Click(object sender, RoutedEventArgs e)

@@ -9,12 +9,24 @@
   <ItemGroup>
     <None Remove="hhh.jpg" />
     <None Remove="Kamikadze.PNG" />
+    <None Remove="puste.jpg" />
+    <None Remove="Resorces\BlueLagune.PNG" />
+    <None Remove="Resorces\www.PNG" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="hhh.jpg" />
+    <Resource Include="puste.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resorces\BlueLagune.PNG">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resorces\hhh.jpg" />
     <Resource Include="Resorces\Kamikadze.PNG" />
+    <Resource Include="Resorces\www.PNG">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

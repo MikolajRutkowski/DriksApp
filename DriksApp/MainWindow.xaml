@@ -8,26 +8,43 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Button Grid.Column="2" x:Name="Exit_Button" Content="Exit" HorizontalAlignment="Center"  VerticalAlignment="Top" Click="Exit_Button_Click" Height="39" Width="73" Margin="0,48,0,0" Grid.Row="2"/>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="Aplikacja z przepisami na drinki" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18"/>
+        <DockPanel Grid.Row="0">
+            <Menu  Background="Purple" DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="Twórca"  />
+                    <Separator />
+                    <MenuItem Header="_Exit" Click="Exit_Button_Click" />
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="2" x:Name="Exit_Button" Content="Exit" HorizontalAlignment="Center"  VerticalAlignment="Top" Click="Exit_Button_Click" Height="39" Width="73" Margin="0,45,0,0" Grid.Row="2"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18" Text="Aplikacja z przepisami na drinki"/>
 
-        <Image  x:Name="DrinkImage" Grid.Column="1" Grid.Row="1" Source="/Resorce/hhh.JPG"/>
-        <Button  x:Name="AddNew" Content="Dodaj nową recepture" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Center" Click="AddNew_Click"/>
-        <TextBlock x:Name="Instruction" HorizontalAlignment="Left"  Grid.Row="1" Text="Przepis" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,10,0,0"/>
-        <Button x:Name="Right" Content="Następny" Grid.Column="1" HorizontalAlignment="Right"  Grid.Row="2" VerticalAlignment="Center" Click="Right_Click"/>
-        <Button x:Name="Left" Content="Poprzedni" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="2" VerticalAlignment="Center" Click="Left_Click"/>
-        <TextBlock x:Name="DriksName" Grid.Column="1" HorizontalAlignment="Center"  Text="Nazwa Drinka" TextWrapping="Wrap" VerticalAlignment="Center"/>
-        <TextBox x:Name="DrinkNumber" Grid.Column="1" HorizontalAlignment="Center" Margin="0,29,0,0" TextWrapping="Wrap" Text="Drink nr. " VerticalAlignment="Top" Width="73" Grid.Row="2"/>
-        <TextBlock x:Name="Ingredients" HorizontalAlignment="Left" Margin="20,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Składniki" VerticalAlignment="Top"/>
+            <Image  x:Name="DrinkImage" Grid.Column="1" Grid.Row="1" Source="/Resorce/hhh.JPG"/>
+            <Button  x:Name="AddNew" Content="Dodaj nową recepture" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Center" Click="AddNew_Click"/>
+            <TextBlock x:Name="Instruction" HorizontalAlignment="Left"  Grid.Row="1" Text="Przepis" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,10,0,0"/>
+            <Button x:Name="Right" Content="Następny" Grid.Column="1" HorizontalAlignment="Right"  Grid.Row="2" VerticalAlignment="Center" Click="Right_Click"/>
+            <Button x:Name="Left" Content="Poprzedni" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="2" VerticalAlignment="Center" Click="Left_Click"/>
+            <TextBlock x:Name="DriksName" Grid.Column="1" HorizontalAlignment="Center"  Text="Nazwa Drinka" TextWrapping="Wrap" VerticalAlignment="Center"/>
+            <TextBox x:Name="DrinkNumber" Grid.Column="1" HorizontalAlignment="Center" Margin="0,29,0,0" TextWrapping="Wrap" Text="Drink nr. " VerticalAlignment="Top" Width="73" Grid.Row="2"/>
+            <TextBlock x:Name="Ingredients" HorizontalAlignment="Left" Margin="20,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Składniki" VerticalAlignment="Top"/>
 
+        </Grid>
     </Grid>
+
 </Window>
