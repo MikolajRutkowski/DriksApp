@@ -1,0 +1,88 @@
+﻿<Window x:Class="DriksApp.Bar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DriksApp"
+        mc:Ignorable="d"
+        Title="Bar" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Menu  Background="Purple" DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="Twórca"  />
+                    <Separator />
+                    <MenuItem Header="_Exit" Click="Exit_Button_Click" />
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="One" Grid.Column="0" Grid.Row="0" Height="Auto"  Source="puste.JPG"/>
+            <Image x:Name="Two" Grid.Column="1" Grid.Row="0" Height="Auto"  Source="puste.JPG"/>
+            <Image x:Name="Three" Grid.Column="2" Grid.Row="0" Height="Auto"  Source="puste.JPG"/>
+            <Image x:Name="Four" Grid.Column="3" Grid.Row="0" Height="Auto"  Source="puste.JPG" Stretch="Uniform"/>
+            <Image x:Name="Five" Grid.Column="4" Grid.Row="0" Height="Auto" Source="puste.JPG"/>
+            <Grid Grid.Row="1" Grid.Column="0" x:Name="TextOne" Background="#FF58C542" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Nazwa" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="NameOne"  />
+                <TextBlock Text="20ml" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  x:Name="QuantityOne"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" x:Name="TextTwo" Background="#FF7042C5" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Nazwa2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="NameTwo" />
+                <TextBlock Text="cos" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  x:Name="QuantityTwo"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2" x:Name="TextThree" Background="#FFC542A8" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Text="cos" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="NameThree" />
+                <TextBlock Text="cos" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="QuantityThree" />
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="3" x:Name="TextFour" Background="#FF4274C5" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Text="cos" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="NameFour" />
+                <TextBlock Text="cos" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="QuantityFour" />
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="4" x:Name="TextFive" Background="#FFC5A242" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Text="cos" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"  x:Name="NameFive"/>
+                <TextBlock Text="700ml" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="QuantityFive" />
+            </Grid>
+            <Button Grid.Column="1" Grid.Row="2" Content="Poprzedni" Name="Back" Click="Back_Click"/>
+            <Button Grid.Column="3" Grid.Row="2" Content="Nastepny" Name="Next" Click="Next_Click"/>
+            <Button Grid.Column="5" Grid.Row="2" Content="Powrót" Name="ExitButton" Click="Exit_Button_Click"/>
+            <Button x:Name="NewButton" Content="Nowy" Grid.Column="0" Grid.Row="2" Click="NewButton_Click"/>
+        </Grid>
+    </Grid>
+</Window>

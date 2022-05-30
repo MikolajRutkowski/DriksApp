@@ -43,6 +43,7 @@
             <TextBlock x:Name="DriksName" Grid.Column="1" HorizontalAlignment="Center"  Text="Nazwa Drinka" TextWrapping="Wrap" VerticalAlignment="Center"/>
             <TextBox x:Name="DrinkNumber" Grid.Column="1" HorizontalAlignment="Center" Margin="0,29,0,0" TextWrapping="Wrap" Text="Drink nr. " VerticalAlignment="Top" Width="73" Grid.Row="2"/>
             <TextBlock x:Name="Ingredients" HorizontalAlignment="Left" Margin="20,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Składniki" VerticalAlignment="Top"/>
+            <Button x:Name="BarButton" Grid.Column="2" Content="Mój Bar" HorizontalAlignment="Left" Margin="9,0,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="66" Click="BarButton_Click"/>
 
         </Grid>
     </Grid>

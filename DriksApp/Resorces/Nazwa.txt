@@ -2,6 +2,4 @@
 1|Kamikadze|/Resorces/Kamikadze.PNG|Wodka 50ml BluCuracao 50ml Sok z Cytryny 50ml|Skladniki mieszamy w shakerze, rozlewamy do kieliszkow i pijemy na raz.
 2|WHITELADY|/Resorces/www.PNG|40 ml ginu 30 ml likieru triple sec (np. Cointreau) 20 ml soku z cytryny kostki lodu skorka cytryny do dekoracji|Wszystkie skladniki wstrzasamy w shakerze z kostkami lodu. Przecedzamy do kieliszka koktajlowego, dekorujemy skorka cytryny.
 3|BLUE LAGOON|/Resorces/BlueLagune.PNG|40 ml ginu 20 ml likieru blue curacao Sprite lub 7up do dopelnienia kostki lodu plasterek pomaranczy do dekoracji|Do wysokiej szklanki wrzucamy kostki lodu, wlewamy kolejno wodke i likier, dopelniamy Spritem.
-4|Nowy|/Resorces/Anno 18002019-12-11-22-54-1.jpg|Chmmm składniki|Jakiś przepis
-5|Tu wpisz nazwe drinka||Tu wpisz składniki|Tu wpisz przepis
-6|sdsdsadasda|/Resorces/20170317_210704.jpg|Tu wpisz składniki|Tu wpisz przepis
+4|Nowy|/Resorces/wodka.JPG|Chmmm składniki|Jakiś przepis

@@ -1,0 +1,6 @@
+1|Wodka|500|/Resorces/wodka.jpg
+2|Tequila|600|/Resorces/wodka.jpg
+3|Liker Migdalowy|400|/Resorces/wodka.jpg
+4|Rum Bialy|100|/Resorces/www.PNG
+5|Rum Zlory|400|/Resorces/wodka.jpg
+6|Whisky|780|/Resorces/wodka.jpg

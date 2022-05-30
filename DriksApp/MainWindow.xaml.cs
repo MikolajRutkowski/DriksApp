@@ -25,12 +25,18 @@ namespace DriksApp
     {
         
 
-        static int Counter = 0;
+       public static int Counter = 0;
+        static int MaxCounter = 0;
+
+       
+
+      
+       
 
         static string[] tab;
-        public int FindMaxCounter()
+        public int FindMaxCounter(string entranse = @"C:\Users\mikol\source\repos\DriksApp\DriksApp\Resorces\Nazwa.txt")
         {
-            string path = @"C:\Users\mikol\source\repos\DriksApp\DriksApp\Resorces\Nazwa.txt";
+            string path = entranse;
             string readText = File.ReadAllText(path);
             int maxcounter = 0;
             foreach (char c in readText)
@@ -43,7 +49,7 @@ namespace DriksApp
             return maxcounter;
         }
 
-        string cut(int x , string entrance, char c = '\n')
+       public string Cut(int x , string entrance, char c = '\n')
         {
 
             string readText = entrance;
@@ -82,22 +88,31 @@ namespace DriksApp
         {
             string path = @"C:\Users\mikol\source\repos\DriksApp\DriksApp\Resorces\Nazwa.txt";
             string readText = File.ReadAllText(path);
-            
-            
-            tab = new string[FindMaxCounter()+1];
+
+            MaxCounter = FindMaxCounter() + 1;
+            tab = new string[MaxCounter];
             InitializeComponent();
             for (int i = 0; i < tab.Length; i++)
             {
 
-                tab[i] = cut(i,readText);
+                tab[i] = Cut(i,readText);
             }
+            MaxCounter--;
             
         }
 
-        public string SetText(int t = 0)
+        public string SetText(string[] tabb ,int t = 0 , int cut = -10)
         {
-          string  text = tab[Counter];
-            string finale = cut(t, text,'|') ;
+            string text;
+            if (cut== -10)
+            {
+                text = tabb[Counter];
+            }
+            else
+            {
+                 text = tabb[cut];
+            }
+            string finale = Cut(t, text,'|') ;
             return finale.Remove(0,1);
         }
 
@@ -112,11 +127,11 @@ namespace DriksApp
 
         public void SetAll()
         {
-            DrinkNumber.Text = "Drink nr. " + SetText(0);
-            DriksName.Text = SetText(1);
-            DrinkImage.Source = SetImage(SetText(2));          
-            Ingredients.Text = SetText(3);
-            Instruction.Text = SetText(4);
+            DrinkNumber.Text = "Drink nr. " + SetText(tab,0);
+            DriksName.Text = SetText(tab,1);
+            DrinkImage.Source = SetImage(SetText(tab,2));          
+            Ingredients.Text = SetText(tab,3);
+            Instruction.Text = SetText( tab ,4);
 
         }
 
@@ -153,6 +168,13 @@ namespace DriksApp
         private  void Exit_Button_Click(object sender, RoutedEventArgs e)
         {
           Application.Current.Shutdown();
+        }
+
+        private void BarButton_Click(object sender, RoutedEventArgs e)
+        {
+            Bar bar = new Bar();
+            bar.Show();
+            Close();
         }
     }
 }
