@@ -1,5 +1,4 @@
 
-1|Kamikadze|/Resorces/Kamikadze.PNG|Wodka 50ml BluCuracao 50ml Sok z Cytryny 50ml|Skladniki mieszamy w shakerze, rozlewamy do kieliszkow i pijemy na raz.
-2|WHITELADY|/Resorces/www.PNG|40 ml ginu 30 ml likieru triple sec (np. Cointreau) 20 ml soku z cytryny kostki lodu skorka cytryny do dekoracji|Wszystkie skladniki wstrzasamy w shakerze z kostkami lodu. Przecedzamy do kieliszka koktajlowego, dekorujemy skorka cytryny.
-3|BLUE LAGOON|/Resorces/BlueLagune.PNG|40 ml ginu 20 ml likieru blue curacao Sprite lub 7up do dopelnienia kostki lodu plasterek pomaranczy do dekoracji|Do wysokiej szklanki wrzucamy kostki lodu, wlewamy kolejno wodke i likier, dopelniamy Spritem.
-4|Nowy|/Resorces/wodka.JPG|Chmmm składniki|Jakiś przepis
+1|Kamikadze|/Resorces/Kamikadze.PNG|Wodka 50 ml. BluCuracao 50 ml. Sok z Cytryny 50 ml.|Skladniki mieszamy w shakerze, rozlewamy do kieliszkow i pijemy na raz.
+2|WHITELADY|/Resorces/www.PNG|Wodka 40 ml. gin 30 ml. likieru triple sec 20 ml. soku z cytryny kostki lodu skorka cytryny do dekoracji|Wszystkie skladniki wstrzasamy w shakerze z kostkami lodu. Przecedzamy do kieliszka koktajlowego, dekorujemy skorka cytryny.
+3|BLUE LAGOON|/Resorces/BlueLagune.PNG|Wodka 40 ml. gin 20 ml. likieru blue curacao 30 ml. Sprite lub 7up do dopelnienia kostki lodu plasterek pomaranczy do dekoracji|Do wysokiej szklanki wrzucamy kostki lodu, wlewamy kolejno wodke i likier, dopelniamy Spritem.
